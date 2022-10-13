@@ -62,12 +62,12 @@ developing your own process.
 
 - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+  - How I debugged: Upon checking the Rails server, I discovered a NameError and fixed the class name (from Toys to Toy) in the create action. 
 
 - Update the number of likes for a toy
 
-  - How I debugged:
+  - How I debugged: There was an Unexpected end of JSON input. I included 'render json:' in the update action. 
 
 - Donate a toy to Goodwill (and delete it from our database)
 
-  - How I debugged:
+  - How I debugged: After initiating a delete action, I saw no route for it. I updated the resources in routes to include all of the CRUD actions.
